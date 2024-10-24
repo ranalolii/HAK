@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HAK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/cd5d306014.js" crossorigin="anonymous"></script>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="stylee.css" rel="stylesheet">
+
+
+    <!--Link SwiperJS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="HAK Automation">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="Overview.html" class="nav-item nav-link active">Overview</a>
+                        <a href="Activities.html" class="nav-item nav-link">Activities</a>
+                        <a href="Sectors.html" class="nav-item nav-link">Sectors</a>
+                        <a href="Partners.html" class="nav-item nav-link">Partners</a>
+
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="Applications.html" class="dropdown-item">Applications</a>
+                                <a href="faq.html" class="dropdown-item">FAQs</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div> -->
+                        <a href="Products.html" class="nav-item nav-link">Products</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header mb-5 one-one-background">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+
+                <div class="content">
+
+                    <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+
+                        <h1 class="one-one display-4 text-white mb-4 animated slideInRight">Your Partner to Success Automate & Grow</h1>
+                        <p class="one-one text-white mb-4 animated slideInRight">HAK Automation: Leading solutions in Process
+                            Automation, Gas & Liquid Analysis, Environmental Monitoring, and Flow & Process
+                            Instrumentation,driving innovation and sustainability in every project.
+                        </p>
+
+                    </div>
+
+
+                    <!-- slideshow -->
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/About2.jpg" alt="unique system integration solutions">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="mb-4">You Can be Assured That You are Receiving The Highest Standard of Measuring &
+                        Control Systems to Lead Your Business</h1>
+                    <p class="mb-4">For the past 50 years, we have been a Trusted Partner in The Measuring and Control
+                        industry, delivering high-quality instruments and unique system integration solutions, backed by
+                        excellent After-sales service. Our commitment to innovation, forward-thinking, and leveraging
+                        our deep expertise Allows us to exceed customer expectations and achieve high levels of
+                        satisfaction.
+                    </p>
+                    <p class="mb-4"> Eng. Hazem Radwan
+
+                        CEO - HAK Automation S.A.E</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>High-Quality Instruments</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Tailored Solutions</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+
+                        <a class="btn btn-outline-primary btn-square me-3"
+                            href="https://www.facebook.com/profile.php?id=61553728581574&mibextid=LQQJ4d"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-3"
+                            href="https://youtube.com/@hakautomation?si=c9scY39xylFvv3WJ" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-3"
+                            href="https://www.instagram.com/hak_automation?igsh=MTBibmpwY2I4NXdwNA==" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary btn-square"
+                            href="https://www.linkedin.com/company/hak-automation/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4">Get To Know HAK</h1>
+                    <p class="mb-4">
+                        Since 1962, HAK Automation Has Provided Advanced Solutions For Various Industries. We Specialize
+                        in Process Automation, Gas and Liquid Analysis, Environmental Monitoring, and Flow & Process
+                        Instrumentation, enhancing efficiency, safety, and sustainability.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa-solid fa-clock-rotate-left fa-2xl"></i>
+                                        </div>
+                                        <h5 class="mb-3">Overview</h5>
+                                        <p>
+                                            HAK Automation Provides Top Solutions in Process Automation, Analysis, and
+                                            Monitoring. For 50+ years, we've specialized in Gas Analyzer Systems and
+                                            automation.
+                                        </p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="Overview.html">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa-solid fa-gear fa-2xl"></i>
+                                        </div>
+                                        <h5 class="mb-3">Activities</h5>
+                                        <p>
+                                            We Specialize in Integrated Solutions For Measuring, Control, and
+                                            Environmental monitoring systems, along with Calibration and Comprehensive
+                                            after-sales Support.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="Activities.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa-solid fa-location-dot fa-2xl"></i>
+                                        </div>
+                                        <h5 class="mb-3">Location & Marketing Coverage</h5>
+                                        <p>Egypt sits at the crossroads of Africa, Asia, and Europe, with access to the
+                                            Mediterranean and Red Seas via the vital Suez Canal.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="Location.html">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa-solid fa-building fa-2xl"></i>
+                                        </div>
+                                        <h5 class="mb-3">Integration Facility</h5>
+                                        <p>
+                                            Our 4,000 m² facility near Alex desert road specializes in assembling and
+                                            integrating HAK's gas analyzer systems.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="Integration.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="Four-one col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+
+                    <h1 class="text-white mb-4">Since 1962, Providing Advanced Automation and Instrumentation Solutions
+                    </h1>
+                    <p class="text-light mb-4 Why">Why Choose HAK?</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Expertise in multiple industries</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Comprehensive process automation</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Cutting-edge technology</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/why chosing us 3.jpg" alt="Advanced Automation and Instrumentation Solutions">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Case Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="mb-4">Explore Our Latest News</h1>
+            </div>
+
+            <div class="case-start" class="row g-4">
+                <div class="col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/News1_page-0001.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="News1.html">
+
+                            <h5 class="lh-base text-white mb-3">HAK Automation Showcase in EGYPS 2018 - The North Africa
+                                Largest Oil & Gas Conference and Exhibition.
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/News2_page-0001.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="News2.html">
+
+                            <h5 class="lh-base text-white mb-3">HAK Automation in “EGYPS” Egypt Petroleum show 12-14
+                                February 2018 in New Cairo Exhibition Centre.
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Case End -->
+
+    <!--partners start-->
+
+
+    <!--partners End-->
+
+
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+
+                <h1 class="mb-4">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What industries Does HAK Automation serve?
+
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    We Serve a Wide Range of Industries, Including Oil & Gas, Food & Beverage, Chemicals
+                                    & Petrochemicals, Cement, Power, Fertilizers, and Metals & Steel.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What are HAK Automation's core capabilities?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Our Core Capabilities Include Process Automation, Gas Analysis, Liquid Analysis,
+                                    Environmental Monitoring, and Flow & Process Instrumentation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How Does HAK Automation Ensure High-quality Solutions?
+
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    We Leverage The Latest Technologies and Partner Closely With Customers to understand
+                                    Their Unique Challenges, Providing Tailored and Innovative Automation Strategies.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    What makes HAK Automation a trusted provider?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    With decades of domain expertise, skilled engineers and technicians, and a
+                                    commitment to long-term value, we deliver reliable and effective solutions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What kind of support does HAK Automation offer post-installation?
+
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    We offer ongoing maintenance, calibration, repair, and comprehensive after-sales
+                                    support to ensure the sustained performance of our systems.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How does HAK Automation enhance operational efficiency and safety?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    By implementing advanced automation technologies and systems, we optimize processes
+                                    to improve efficiency, safety, and sustainability.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    What specific services does HAK Automation provide?
+
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Our services range from system design and integration to installation,
+                                    commissioning, and continuous support and maintenance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Why should we choose HAK Automation over other providers?
+
+
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    We have a long history of expertise, a wide range of industry applications,
+                                    innovative solutions, and a dedicated team focused on delivering exceptional value
+                                    and support.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
+
+    <!-- Team Start -->
+    <section class="Teamswiper mySwiper">
+        <h1 style="text-align: center; margin-bottom: 20px;">Meet Our Experienced Team</h1>
+        <div class="swiper-wrapper">
+
+   
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="img/Our Team/amr.jpeg" alt="Service Engineer">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">Amr Emara</span>
+                    <span class="card__name">Service Engineer</span>
+
+                    <p class="card__text"> <a class="btn btn-primary rounded-pill px-4"
+                            href="mailto:     amr.emara@hak.com.eg" target="_blank">
+                            amr.emara@hak.com.eg
+                        </a></p>
+
+
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-outline-primary btn-square"
+                            href="https://www.linkedin.com/in/amr-emara-9ab805205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="img/Our Team/badr.png" alt="Sales Engineer">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">Mohamed Badr</span>
+                    <span class="card__name">Sales Engineer</span>
+                    <p class="card__text"> <a class="btn btn-primary rounded-pill px-4"
+                            href="mailto:presales@hak.com.eg" target="_blank">
+                            presales@hak.com.eg
+                        </a></p>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-outline-primary btn-square"
+                            href="https://www.linkedin.com/in/mohamed-badr-24ba6b248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="img/Our Team/ess.jpeg" alt="Esraa Thabit">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">Esraa Thabit</span>
+                    <span class="card__name" style="text-align: center;">Administration CEO & Sales Executive </span>
+                    <p class="card__text"> <a class="btn btn-primary rounded-pill px-4" href="mailto:sales01@hak.com.eg"
+                            target="_blank">
+                            sales01@hak.com.eg </a></p>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-outline-primary btn-square"
+                            href="https://www.linkedin.com/in/esraa-thabit-019063279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="img/Our Team/ya.jpeg" alt="Yasmin Al shaamy">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">YASMIN AL-SHAMY</span>
+                    <span class="card__name">Chief Operation Officer (COO)</span>
+                    <p class="card__text"> <a class="btn btn-primary rounded-pill px-4"
+                            href="mailto:yasmin.mohamed@hak.com.eg" target="_blank">
+                            yasmin.mohamed@hak.com.eg
+                        </a></p>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-outline-primary btn-square"
+                            href="https://www.linkedin.com/in/yasmina-elshamy-07078092?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="img/Our Team/ra.jpeg" alt="Adminstartion">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">Rawan Mohamed</span>
+                    <span class="card__name">Administration</span>
+                    <p class="card__text"> <a class="btn btn-primary rounded-pill px-4"
+                            href="mailto:administration@hak.com.eg" target="_blank">
+                            administration@hak.com.eg</a></p>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-outline-primary btn-square"
+                            href="https://www.linkedin.com/in/rawan-mohamed-630009308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="img/Our Team/mo.jpeg" alt="card image">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">Mohamed Ramadan</span>
+                    <span class="card__name">Sales</span>
+                    <p class="card__text"> <a class="btn btn-primary rounded-pill px-4" href="mailto:sales01@hak.com.eg"
+                            target="_blank">
+                            sales01@hak.com.eg </a></p>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-outline-primary btn-square"
+                            href="https://www.linkedin.com/in/mohamed-ramadan-59648b233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="img/Our Team/Rana.jpeg" alt="Marketing Specialist">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">Rana Nabil</span>
+                    <span class="card__name">Marketing</span>
+                    <p class="card__text"> <a class="btn btn-primary rounded-pill px-4" href="mailto:sales01@hak.com.eg"
+                            target="_blank">
+                            sales01@hak.com.eg </a></p>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-outline-primary btn-square"
+                            href="https://www.linkedin.com/in/rana-nabil-2a96bb243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+         
+
+
+        </div>
+    </section>
+
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4">Testomonial</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary">
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
+                                stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
+                                amet</p>
+                            <div class="d-flex align-items-center py-1 ">
+                                <img class="img-fluid testimonial-img flex-shrink-0 rounded-circle" src="img/Partners/1.png"
+                                     style="width: 60px; height: 60px;"> 
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
+                                stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
+                                amet</p>
+                            <div class="d-flex align-items-center py-1">
+                                <img class="img-fluid testimonial-img  flex-shrink-0 rounded-circle" src="img/Partners/1.png"
+                                     style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
+                                stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
+                                amet</p>
+                            <div class="d-flex align-items-center py-1">
+                                <img class="img-fluid flex-shrink-0 testimonial-img rounded-circle" src="img/Partners/1.png"
+                                     style="width: 60px; height: 60px;"> 
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="hero-NewsLetter">
+        <h1>Stay Updated with HAK Automation</h1>
+        <p>Get the Latest News and Insights Delivered to Your Inbox!</p>
+        <form name="submit-to-google-sheet">
+            <input type="email" name="Email" placeholder="Your Email ID" required>
+            <button type="submit"><img src="img/NewsLetter/send-icon.png" width="30px" alt="HAK News Letter"></button>
+        </form>
+
+        <span id="msg"></span>
+
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img src="img/Footer/logotiny.png" alt="HAK Footer">
+                    </a>
+                    <p class="mb-0">
+                        Since 1962, HAK Automation is a leading system integrator for Gas Analyzer Systems and other
+                        Automation System Solutions for all industries
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="White-text mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Plaza 34 Mall, 6th of october, Cairo, Egypt</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+20 2 3851 43 35</p>
+                    <p><i class="fa fa-envelope me-3"></i>Adminstration@hak.com.eg</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.facebook.com/profile.php?id=61553728581574&mibextid=LQQJ4d%E2%84%A2"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://youtube.com/@hakautomation?si=c9scY39xylFvv3WJ" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.instagram.com/hak_automation?igsh=MTBibmpwY2I4NXdwNA==" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.linkedin.com/company/hak-automation/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="White-text mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="AboutUs.html">About Us</a>
+                    <a class="btn btn-link" href="Success.html">Success Stories</a>
+                    <a class="btn btn-link" href="Location.html" >Location </a>
+                    <a class="btn btn-link" href="Integration.html" >Integration & Facility</a>
+                </div>
+                <!-- <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Environmental Monitoring</a>
+                    <a class="btn btn-link" href="">Instrument Supply</a>
+                    <a class="btn btn-link" href="">System Capabilities</a>
+                    <a class="btn btn-link" href="">Material Handling Technology</a>
+                    <a class="btn btn-link" href="">Calibration Services</a>
+                    <a class="btn btn-link" href="">After- Sales Support</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">HAK AUTOMATION</a>, All Right Reserved.
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <!-- <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+   
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+
+
+    <!--Linking SwiperJS script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Swiper JS -->
+</body>
+
+</html>
